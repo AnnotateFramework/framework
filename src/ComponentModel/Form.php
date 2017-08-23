@@ -12,6 +12,8 @@ use Nextras\Forms\Rendering\Bs3FormRenderer;
 abstract class Form extends BaseComponent
 {
 
+	public $useBootstrap = TRUE;
+
 	protected $addChildComponents = FALSE;
 
 
@@ -30,7 +32,9 @@ abstract class Form extends BaseComponent
 				$this->fillForm($this['form']);
 			}
 		}
-		$this['form']->setRenderer(new Bs3FormRenderer);
+		if ($this->useBootstrap) {
+			$this['form']->setRenderer(new Bs3FormRenderer);
+		}
 	}
 
 
