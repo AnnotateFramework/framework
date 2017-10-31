@@ -2,7 +2,6 @@
 
 namespace Annotate\Framework\Application\Components;
 
-
 use Annotate\Framework\ComponentModel\Exceptions\ComponentTemplateNotFoundException;
 use Nette\Application\UI\Control;
 use Nette\Bridges\ApplicationLatte\Template;
@@ -66,7 +65,7 @@ abstract class BaseComponent extends Control
 
 
 
-	public abstract function build($args = []);
+    abstract public function build($args = []);
 
 
 
@@ -81,7 +80,7 @@ abstract class BaseComponent extends Control
 
 
 	/**
-	 * @param $localPath
+	 * @param  string
 	 *
 	 * @throws ComponentTemplateNotFoundException
 	 * @return Template

@@ -2,7 +2,10 @@
 
 namespace Annotate\Framework\Utils;
 
-class Strings extends \Nette\Utils\Strings
+use Nette;
+
+
+class Strings extends Nette\Utils\Strings
 {
 
 	public static function fromDashes($s)

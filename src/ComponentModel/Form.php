@@ -4,7 +4,6 @@ namespace Annotate\Framework\ComponentModel;
 
 use Annotate\Framework\Application\Components\BaseComponent;
 use Annotate\Framework\ComponentModel\Forms\IFillable;
-use Nette;
 use Nette\Application\UI as UI;
 use Nextras\Forms\Rendering\Bs3FormRenderer;
 
@@ -29,11 +28,11 @@ abstract class Form extends BaseComponent
 		parent::attached($parent);
 		if ($parent instanceof UI\PresenterComponent) {
 			if ($this instanceof IFillable) {
-				$this->fillForm($this['form']);
+                $this->fillForm($this['form']);
 			}
 		}
 		if ($this->useBootstrap) {
-			$this['form']->setRenderer(new Bs3FormRenderer);
+			$this['form']->setRenderer(new Bs3FormRenderer());
 		}
 	}
 

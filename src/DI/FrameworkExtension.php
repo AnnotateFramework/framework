@@ -78,7 +78,7 @@ class FrameworkExtension extends CompilerExtension
 
 
 
-	private function  getDefaults()
+	private function getDefaults()
 	{
 		return [
 			'debugger' => TRUE,

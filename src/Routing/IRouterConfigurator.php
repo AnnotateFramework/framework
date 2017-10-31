@@ -2,6 +2,7 @@
 
 namespace Annotate\Framework\Routing;
 
+
 interface IRouterConfigurator
 {
 

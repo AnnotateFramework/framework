@@ -2,16 +2,24 @@
 
 namespace Annotate\Framework\Application\Components;
 
+
+use Annotate\Framework\ComponentModel\Exceptions\ComponentTemplateNotFoundException;
+
+
 class Container extends BaseComponent
 {
 
-	public function __construct()
+    /** @noinspection PhpMissingParentConstructorInspection */
+    public function __construct()
 	{
 	}
 
 
 
-	public function render()
+    /**
+     * @throws ComponentTemplateNotFoundException
+     */
+    public function render()
 	{
 		if ($this->templateName == "") {
 			/** @var $component BaseComponent */

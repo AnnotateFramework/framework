@@ -2,7 +2,10 @@
 
 namespace Annotate\Framework\ComponentModel\Exceptions;
 
-class ComponentTemplateNotFoundException extends \Exception
+use Exception;
+
+
+class ComponentTemplateNotFoundException extends Exception
 {
 
 }

@@ -8,7 +8,6 @@ use Annotate\Framework\Application\Components\Container;
 interface IContainerFactory
 {
 
-
 	/**
 	 * @return Container
 	 */
